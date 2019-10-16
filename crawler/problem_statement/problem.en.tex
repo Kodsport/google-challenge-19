@@ -1,0 +1,28 @@
+\problemname{Old School Cralwer}
+When building a search engine, one of the important components is the \emph{web crawler}, meant to crawl through the web of web pages on the Internet by following links on the pages.
+In this problem, you are to implement a web crawler that talks to a web server in order to crawl a site.
+
+\section*{Task}
+Write a program that communicates with a web server in order to find the links of all the HTML pages that can be accessed by clicking links starting at the HTTP URL \texttt{http://www.fake.webserver}.
+
+All entities served by the server will be either:
+\begin{itemize}
+\item A valid \href{https://www.w3.org/TR/1998/REC-html40-19980424/}{HTML 4.0} web page without forms
+\item A valid \href{https://www.w3.org/TR/CSS1/}{CSS 1.0} style sheet
+\item A valid \href{https://www.ecma-international.org/publications/files/ECMA-ST-ARCH/ECMA-262,\%201st\%20edition,\%20June\%201997.pdf}{ECMAScript} script
+\end{itemize}
+
+More specifically, you should \textbf{print all the links to HTML pages a user could access} starting at the page \texttt{http://www.fake.webserver}, as they were presented to a user in Internet Explorer 4 running on Windows 98.
+
+You can safely disregard any HTTP URLs that point to hosts other than \texttt{www.fake.webserver} when solving the problem.
+
+\section*{Server communication}
+Normally, you'd implement such a cralwer by using DNS to lookup the IP address for the host and then connecting to it.
+However, since Kattis does not support networking, you will instead talk to the server by writing your requests one at a time to standard out, and reading the responses one at a time from standard in. To separate responses containing entity bodies from each other, each entity body will be terminated by with the bytes \texttt{0x0D 0x0A} -- it is guaranteed that they are never appear in an entity body.
+
+The server you will be talking to only implements \href{https://www.w3.org/Protocols/HTTP/1.0/spec.html}{HTTP/1.0} \texttt{GET} requests.
+
+If you ever print an invalid request, your program will be judged \emph{Wrong Answer}.
+
+\section*{Output}
+Once your program has crawled the web site, print a single line containing the canonical HTTP URLs of all HTML pages sorted in lexicograpahical order, separated by spaces.
