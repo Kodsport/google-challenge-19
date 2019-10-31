@@ -13,10 +13,6 @@
 00 - two pages, link that is in text
 00 - two pages, a-link in HTML comment
 00 - two pages, link that is a LINK
-00 - two pages, inline CSS-hidden link
-00 - two pages, style sheet CSS-hidden link
-00 - two pages, javascript added link
-00 - two pages, javascript redirect
 00 - two pages, META redirect
 00 - two pages, link that goes to outside
 00 - two pages, link that is relative
