@@ -1,0 +1,42 @@
+\problemname{Coin Counter}
+Given an image of a set of Swedish coins valued 1, 5 and 10 SEK, what is their sum?
+
+The coins look like this:
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.2\textwidth]{1.png}
+  \caption{1 SEK coin}
+\end{figure}
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.2\textwidth]{5.png}
+  \caption{5 SEK coin}
+\end{figure}
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.2\textwidth]{10.png}
+  \caption{10 SEK coin}
+\end{figure}
+
+\section*{Input}
+The input is a JPEG-formatted image.
+
+\section*{Output}
+Output a single number; the sum of all the coins in the input image.
+
+\section*{Scoring}
+Your solution will be tested on a set of test groups, each worth a number of points.
+To get the points for a test group you need to solve all test cases in the test group.
+Your final score will be the maximum score of a single submission.
+
+\noindent
+\begin{tabular}{| l | l | l |}
+\hline
+Group & Points & Constraints \\ \hline
+1     & 20     & There are only 1 SEK coins. None of the coins are rotated or cover each other. \\ \hline
+2     & 30     & There are only 1 SEK coins. None of the coins cover each other. \\ \hline
+3     & 75     & There are only 1 SEK coins. \\ \hline
+4     & 60     & None of the coins are rotated or cover each other. \\ \hline
+5     & 90     & None of the coins cover each other. \\ \hline
+6     & 225     & No further restrictions. \\ \hline
+\end{tabular}
