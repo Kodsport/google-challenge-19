@@ -10,13 +10,13 @@ Otherwise, you will give them the candy and wait for the next group of kids.
 You now wonder, if you have a budget that allows you to buy $M$ pieces of candy, how many should you buy in order to get as few as possible rolls of toilet paper thrown at you?
 
 \section*{Input}
-The first line of input contains two numbers $0 \le M \le 10^9$ and $1 \le N \le 100\,000$ -- the original amount of pieces of candy that you have, and the number of group of kids that will come.
+The first line of input contains two numbers $1 \le N \le 100\,000$ and $1 \le M \le 2 \cdot 10^9$ -- the number of group of kids that will come, and the maximum amount of candy that you can buy.
 
 The next $N$ lines contains the sizes of the groups of kids that will come to your house, in the order that they arrive.
-Each group of kids will request between $0$ and $10$ pieces of candy.
+Each group of kids will request between $1$ and $10$ pieces of candy.
 
 \section*{Output}
-Output a single integer -- the number of pieces of candy below $M$ that you will need in order to get as few rolls of toilet paper as possible thrown at you.
+Output a single integer -- the fewest possible rolls of toilet paper you can have thrown at you, if you buy the right amount of candy.
 
 \section*{Scoring}
 Your solution will be tested on a set of test groups, each worth a number of points.
@@ -28,5 +28,5 @@ Your final score will be the maximum score of a single submission.
 \hline
 Group & Points & Constraints \\ \hline
 1     & 50     & $M$ and $N$ will be at most $100$. \\ \hline
-2     & 150     & No further constraints. \\ \hline
+2     & 150    & No further constraints. \\ \hline
 \end{tabular}
