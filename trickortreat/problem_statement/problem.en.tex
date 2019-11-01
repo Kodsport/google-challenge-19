@@ -1,0 +1,32 @@
+\problemname{Trick and Treat}
+During Halloween, kids come by your house to request candy.
+If you can not give them any, they will become angry and throw toilet paper at your house!
+
+This year, you have already scouted the neighbourhood and know that kids will come to your house in groups of $A_1, A_2, \dots, A_N$ kids in that order.
+When a group of $A_i$ kids comes, they will request $A_i$ pieces of candy.
+If you do not have enough, they throw a roll of toilet paper and move on to the next house, never to return again.
+Otherwise, you will give them the candy and wait for the next group of kids.
+
+You now wonder, if you have a budget that allows you to buy $M$ pieces of candy, how many should you buy in order to get as few as possible rolls of toilet paper thrown at you?
+
+\section*{Input}
+The first line of input contains two numbers $0 \le M \le 10^9$ and $1 \le N \le 100\,000$ -- the original amount of pieces of candy that you have, and the number of group of kids that will come.
+
+The next $N$ lines contains the sizes of the groups of kids that will come to your house, in the order that they arrive.
+Each group of kids will request between $0$ and $10$ pieces of candy.
+
+\section*{Output}
+Output a single integer -- the number of pieces of candy below $M$ that you will need in order to get as few rolls of toilet paper as possible thrown at you.
+
+\section*{Scoring}
+Your solution will be tested on a set of test groups, each worth a number of points.
+To get the points for a test group you need to solve all test cases in the test group.
+Your final score will be the maximum score of a single submission.
+
+\noindent
+\begin{tabular}{| l | l | l |}
+\hline
+Group & Points & Constraints \\ \hline
+1     & 50     & $M$ and $N$ will be at most $100$. \\ \hline
+2     & 150     & No further constraints. \\ \hline
+\end{tabular}
