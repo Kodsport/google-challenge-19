@@ -1,0 +1,45 @@
+# Simple (80)
+01 - 20 - single page
+02 - 20 - two pages
+03 - 20 - three pages in a chain
+04 - 20 - three pages in a loop
+
+# Statuses (60)
+05 - 10 - two pages, one is 403
+06 - 10 - two pages, one is 404
+07 - 10 - two pages, one gives 503 first request
+08 - 15 - two pages, one gives 500 all the time
+09 - 15 - two pages, one is 301
+10 - 10 - two pages, one is 302
+
+# META (40)
+11 - 40 - two pages, META redirect
+
+# Various weird links (160)
+12 - 15 - two pages, a-link in HTML comment
+13 - 10 - two pages, link that is in text
+14 - 10 - two pages, link that is a LINK
+15 - 10 - two pages, link that goes to outside
+16 - 10 - two pages, link that is relative
+17 - 10 - two pages, link that is to fragment
+28 - 10 - one page, with a LINK element
+29 - 15 - two pages, one has a relative URL and a BASE element
+20 - 10 - one page, with an a-link to a style sheet
+21 - 10 - two pages, one with an AREA link
+22 - 15 - two pages, one with a link in a NOSCRIPT tag
+23 - 10 - two pages, one with a weird encoding
+24 - 15 - two pages, one with escaped characters in the URL
+25 - 10 - two pages, line breaks in the A element
+
+# Canonicalization (60)
+26 - 15 - two pages, one to the path http://host:80/test
+27 - 15 - two pages, one to the path http://host/
+28 - 15 - two pages, one to the path http://host
+29 - 15 - two pages, one to the path http://HOST/test
+
+# Redirect loop (40)
+30 - 40 - two pages, one with a redirect loop
+
+# Header stuff (60)
+31 - 30 - two pages, returning text/html with parameters
+32 - 30 - two pages, one that requires Referer to be sent
