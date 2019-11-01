@@ -7,11 +7,9 @@ string output_dir;
 
 [[noreturn]]
 void wa(const string& msg) {
-	if (!msg.empty()) {
-		cout << msg << endl;
-		ofstream fout2(output_dir + "/teammessage.txt");
-		fout2 << msg << endl;
-	}
+	cout << msg << endl;
+	ofstream fout2(output_dir + "/teammessage.txt");
+	fout2 << msg << endl;
 	ofstream fout(output_dir + "/score.txt");
 	fout << 0 << flush;
 	exit(43);
@@ -55,17 +53,9 @@ int main(int argc, char** argv) {
 		wa("Expected end of file, saw " + word2 + ".");
 	}
 
-	double score;
-	double frac = printed / (double)wlsize;
-	if (printed * 3 < wlsize) {
-		score = 0;
-	} else {
-		score = 50 + 450 * (frac - 1/3.0) * (3.0 / 2.0);
+	if (printed == 0) {
+		wa("No output!");
 	}
 
-	ofstream fout(output_dir + "/teammessage.txt");
-	fout << "Printed " << printed << " words out of " << wlsize << " (" << setprecision(2) << fixed << (frac * 100) << "%)." << endl;
-
-	if (score == 0) wa("");
-	ac(score);
+	ac(printed / (double)wlsize * 500);
 }
