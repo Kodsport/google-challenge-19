@@ -1,6 +1,7 @@
 \problemname{Dictionary Compression}
-In the menu to the right, you are able to download an English dictionary (\texttt{dict.txt}) containing a sorted list of words, one per line.
-Your task is to write a program that outputs a prefix of the dictionary that is as long as possible.
+In the menu to the right, you are able to download an English dictionary (\texttt{dict.txt}) containing a sorted list of words, one per line,
+Your task is to write a program that outputs as much of this dictionary as possible.
+However, the dictionary is $972\,104$ bytes in size, while your program can be at most $91\,000$ bytes!
 
 \section*{Input}
 There is no input for this problem.
@@ -8,6 +9,7 @@ There is no input for this problem.
 \section*{Output}
 Output a number of lines, each containing a word from the dictionary.
 The words must form a prefix of the entire file.
+That is, you must output the first $K$ words of the dictionary, for some value of $K$.
 
 \section*{Scoring}
 Assume that the fraction of the words you output is $x$. Then, you will be given $500 \cdot x$ points.
@@ -15,3 +17,6 @@ Assume that the fraction of the words you output is $x$. Then, you will be given
 \section*{Limits}
 Your program for this task can be at most \textbf{91000} bytes in length.
 This limit includes files submitted along with the program.
+
+It may be useful to know that it is possible to submit files alongside your program on Kattis --
+such files can then be read from \texttt{/src/<filename>}.
