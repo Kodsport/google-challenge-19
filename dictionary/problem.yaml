@@ -6,4 +6,11 @@ grading:
     objective: max
 limits:
     code: 88 # We want 88.8671875, but problmetools requires int
+#UPDATE problem_judging
+#SET sourcelim = 91000
+#WHERE problem_judging_id = (
+#   SELECT problem_judging_id
+#   FROM problem
+#   WHERE problem_name = 'dictionary'
+#);
 validation: custom score
