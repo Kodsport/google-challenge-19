@@ -5,5 +5,5 @@ type: scoring
 grading:
     objective: max
 limits:
-    code: 88.8671875
+    code: 88 # We want 88.8671875, but problmetools requires int
 validation: custom score
